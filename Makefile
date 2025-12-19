@@ -7,7 +7,7 @@ NVCC := nvcc
 # =============================
 # Flags
 # =============================
-CXXFLAGS  := -Iinclude -MMD -MP -Wall -Wextra -std=c++23
+CXXFLAGS  := -Iinclude -MMD -MP -Wall -Wextra -std=c++20
 NVCCFLAGS := -Iinclude -std=c++20
 
 # CUDA arch
