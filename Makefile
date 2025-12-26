@@ -3,11 +3,14 @@
 # =============================
 CXX  := clang++
 NVCC := nvcc
+CUDA_HOME := /opt/cuda
 
 # =============================
 # Flags
 # =============================
 CXXFLAGS  := -Iinclude -MMD -MP -Wall -Wextra -std=c++20
+CXXFLAGS  += -I$(CUDA_HOME)/include
+CXXFLAGS  += --cuda-path=$(CUDA_HOME)
 NVCCFLAGS := -Iinclude -std=c++20
 
 # CUDA arch
