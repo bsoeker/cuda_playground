@@ -4,8 +4,8 @@
 extern "C" {
 #endif
 
-void say_hello(int, int);
+void saxpy(float*, const float*, const float, int);
 
 #ifdef __cplusplus
 }
-#endif // __cplusplus
+#endif

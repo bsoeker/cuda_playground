@@ -6,7 +6,7 @@ __global__ void say_hello_kernel() {
   printf("Hello from GPU thread: %d\n", id);
 }
 
-void say_hello() {
-  say_hello_kernel<<<4, 256>>>();
+void say_hello(int gridDim, int blockDim) {
+  say_hello_kernel<<<gridDim, blockDim>>>();
   cudaDeviceSynchronize();
 }
